@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers' class='center'>
+          <h1 id='title'> Guessing Game</h1>
+          <h2>Enter your 5 guesses below</h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent' class='center'>
+            <form>
+                Your guess: <input id='player-input' type='text' name='Guess' autofocus='autofocus' placeholder='#' min='1' max='100' step='1' class='center'>
+                </input>
+                <button id='submit' type='button'>Submit!</button>
+            </form>
+          </div>
+
+          <div id='guesses'>
+            <ul class='center'>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns" class='center'>
+            <button type='button'>Reset</button>
+            <button type='button'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div>
+          <div class='contact'>
+                <h4>Project by Jenny Wang</h4>
+                <a href="mailto:jennysihua@gmail.com?subject=Website">Email me</a>
+              </div>
+          <div class='footer-imgs'>
+            <img src='fa-logo@2x.png'></img>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+</html>
