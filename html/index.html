@@ -4,11 +4,12 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../css/styles.css'>
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class='container'>
 
         <div id='headers' class='center'>
           <h1 id='title'> Guessing Game</h1>
@@ -16,11 +17,11 @@
         </div>
 
         <div id='main'>
-          <div id='input-parent' class='center'>
+          <div class='center' 'parent-input'>
             <form>
                 Your guess: <input id='player-input' type='text' name='Guess' autofocus='autofocus' placeholder='#' min='1' max='100' step='1' class='center'>
                 </input>
-                <button id='submit' type='button'>Submit!</button>
+                <button id='submit' class='btn-success' type='button'>Submit!</button>
             </form>
           </div>
 
@@ -34,27 +35,26 @@
             </ul>
           </div>
 
-          <div id="menu-btns" class='center'>
-            <button type='button'>Reset</button>
-            <button type='button'>Hint</button>
+          <div id='menu-btns' class='center'>
+            <button type='button' class='btn-warning'>Reset</button>
+            <button type='button' class='btn-info'>Hint</button>
           </div>
         </div>
       </div>
 
 
 
-    <div id='footer' class='center'>
+    <div id='footer' class='center' class='col-sm-4'>
         <div>
-          <div class='contact'>
-                <h4>Project by Jenny Wang</h4>
-                <a href="mailto:jennysihua@gmail.com?subject=Website">Email me</a>
-              </div>
           <div class='footer-imgs'>
-            <img src='fa-logo@2x.png'></img>
-            <img src='grace_hopper_academy.png'></img>
+                <img src='../images/fa-logo@2x.png'></img>
           </div>
-
-
+          <div class='contact'>
+            Project by Jenny Wang
+          </div>
+          <div class='footer-imgs'></div>
+            <img src='../images/grace_hopper_academy.png'></img>
+          </div>
         </div>
     </div>
 
