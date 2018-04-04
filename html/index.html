@@ -3,9 +3,13 @@
   <head>
     <title>Guessing Game</title>
 
-    <!-- Bootstrap and CSS here-->
+    <!--Bootstrap and CSS here-->
     <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' href='../css/styles.css'>
+    
+    <!--Scripts-->
+    <script src = '../GuessingGame-Part2/jquery-3.3.1.min.js'></script>
+    <script src = '../GuessingGame-Part2/GuessingGame.js'></script>
   </head>
   <body>
 
@@ -13,13 +17,13 @@
 
         <div id='headers' class='center'>
           <h1 id='title'> Guessing Game</h1>
-          <h2>Enter your 5 guesses below</h2>
+          <h2 id='feedback'>Enter your 5 guesses below.</h2>
         </div>
 
         <div id='main'>
           <div class='center' 'parent-input'>
             <form>
-                Your guess: <input id='player-input' type='text' name='Guess' autofocus='autofocus' placeholder='#' min='1' max='100' step='1' class='center'>
+                Your guess: <input id='player-input' type='text' name='Guess' autofocus='autofocus' placeholder='#' min='1' max='100' step='1' class='center' autocomplete='off'>
                 </input>
                 <button id='submit' class='btn-success' type='button'>Submit!</button>
             </form>
@@ -36,8 +40,8 @@
           </div>
 
           <div id='menu-btns' class='center'>
-            <button type='button' class='btn-warning'>Reset</button>
-            <button type='button' class='btn-info'>Hint</button>
+            <button id='reset' type='button' class='btn-warning'>Reset</button>
+            <button id='hint' type='button' class='btn-info'>Hint</button>
           </div>
         </div>
       </div>
@@ -57,6 +61,6 @@
           </div>
         </div>
     </div>
-
+ 
   </body>
 </html>

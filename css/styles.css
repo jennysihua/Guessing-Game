@@ -1,5 +1,6 @@
-html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+body {
+    background-color: #c9e2d3;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .center {
@@ -56,12 +57,15 @@ html {
       line-height: 75px;
       font-size: 3em;
       margin: 0px 5px;
+      background-color: #FAEBD7;
+      opacity: .7;
   }
 
   #player-input {
       border-radius: 100px;
       height: 160px;
       width: 160px;
+      background-color: #FAEBD7
   }
 
   #submit {
@@ -71,8 +75,14 @@ html {
       position: relative;
       left: -40px;
       top: 40px;
+      background-color: #337147;
+      border-color: #337147;
   }
 
   form {
       margin: 50px;
+  }
+
+  *:focus{
+      outline: none;
   }
